@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Cradle Dashboard</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Cradle Dashboard</h1>
+    <div class="data-display">
+      <div class="data-item">
+        <h2>Temperature</h2>
+        <p id="temperature">-- °C</p>
+      </div>
+      <div class="data-item">
+        <h2>Motion Detected</h2>
+        <p id="motion">No</p>
+      </div>
+      <div class="data-item">
+        <h2>Sound Detected</h2>
+        <p id="sound">No</p>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="manualControl" onclick="toggleManualControl()">Start Rocking</button>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
